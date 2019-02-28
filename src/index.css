@@ -5,6 +5,13 @@ html, body {
   font-size:18px;
 }
 
+.clock{
+  padding: 16px 50px;
+  margin: 16px auto;
+  border-radius: 6px;
+  color: #4285f4;
+}
+
 .container {
   width: 100%;
   max-width: 1300px;
