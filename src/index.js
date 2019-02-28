@@ -48,6 +48,11 @@ function ChatHook() {
     <Fragment>
       <Welcome />
       <TextField handleOnChange={updateValue} value={value} />
+      {unreadMessages.length > 0 &&
+        <h2>
+          You have {unreadMessages.length} unread messages.
+        </h2>
+      }
       <button className="btn--submit" onClick={updateMessages}>SUBMIT</button>
       {messages}
     </Fragment>
@@ -63,7 +68,7 @@ ReactDOM.render(
 
 //clock
 function FormattedDate(props) {
-  return <h2>It is {props.date.toLocaleTimeString()}.</h2>;
+  return <div>Now, it is {props.date.toLocaleTimeString()}.</div>;
 }
 
 class Clock extends React.Component {
@@ -100,7 +105,7 @@ class Clock extends React.Component {
 
 function Appclock() {
   return (
-    <div class="clock">
+    <div className="clock">
       <Clock />
     </div>
   );
