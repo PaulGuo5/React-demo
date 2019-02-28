@@ -8,6 +8,7 @@ const Welcome = () =>(
   <div>
     <h1>Assignment 2</h1>
     <div>In this App, we can output what we input in the textarea below to the screen. And also, we can output the time we input.</div>
+    <div>The configuration of this app is learned from <a href="https://glitch.com/~create-react-app-sample">this demo</a></div>
     <br></br>
   </div>
 )
@@ -19,7 +20,7 @@ const TextField = ({ value, handleOnChange }) => (
 const NewMessage = ({ message, timeStamp }) => (
   <div className="message__container">
     <div>{message}</div>
-    <div class="timeStamp">{timeStamp}</div>
+    <div className="timeStamp">{timeStamp}</div>
   </div>
 );
 
