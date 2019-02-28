@@ -139,6 +139,13 @@ Similarly, whenever the clock-generated DOM is removed, we also want to clear th
 
 12. [Vue overview](https://cn.vuejs.org/): https://cn.vuejs.org/
 
+13. [React demo](https://glitch.com/~create-react-app-sample): https://glitch.com/~create-react-app-sample
+- learn how to configure React environment in practice
+
+14. [message box demo](https://codepen.io/anon/pen/moebYQ): https://codepen.io/anon/pen/moebYQ
+- In this demo, I learn how the State work in the project
+
+
 ### ← 5. What kind of application did you make?
 
-I make an application of a simple message box. Firstly, I use the [React demo](https://glitch.com/~create-react-app-sample) to build the React configuration. And learn how to configure React environment. In general, I create the message box learning from the [demo](https://codepen.io/anon/pen/moebYQ) and get to know how to use the "State" in practice. For the message box part, we can input message in the textarea and output by "submit" button to print the message in the screen. At the same time, use the submit time as key of each message and it will be printed in the screen as well. Secondly, I build a si
+I make an application of a simple message box. Firstly, I use the [React demo](https://glitch.com/~create-react-app-sample) to build the React configuration. And learn how to configure React environment. In general, I create the message box learning from the [demo](https://codepen.io/anon/pen/moebYQ) and get to know how to use the "State" in practice. For the message box part, we can input message in the textarea and output by "submit" button to print the message in the screen. At the same time, use the submitted time as key of each message and it will be printed in the screen as well. Then I also create the variable to count the number of current messages. The idea is from the [conditional rendering](https://react.docschina.org/docs/conditional-rendering.html), by which I get the point of how to use condition to limit the output. Secondly, I build a simple clock to show the current time. I learn from the [tutorial](https://react.docschina.org/docs/state-and-lifecycle.html) and the issue is about the mounting and unmounting.
