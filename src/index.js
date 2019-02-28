@@ -17,7 +17,7 @@ const Welcome = () =>(
 )
 
 const TextField = ({ value, handleOnChange }) => (
-  <textarea placeholder="Write your message" onChange={handleOnChange} value={value} />
+  <textarea placeholder="Please enter your message" onChange={handleOnChange} value={value} />
 )
 
 const NewMessage = ({ message, timeStamp }) => (
