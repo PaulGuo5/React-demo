@@ -1,22 +1,18 @@
-body {
+html, body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  font-family: 'Ubuntu', arial, sans-serif; 
 }
 
 .container {
   width: 100%;
   max-width: 768px;
+  padding: 16px 0;
+  margin: 16px auto;
   background: #f3f3f3;
+  border-radius: 6px;
 }
 
 #app {
@@ -25,17 +21,25 @@ code {
 }
 
 textarea {
+  margin: 0 auto 16px;
   display: block;
   width: 100%;
+  padding: 8px;
   font-size: 14px;
   box-sizing: border-box;
   font-family: inherit;
-  height:100%; 
+  resize: none;
+  outline: none;
+  border: none;
+  box-shadow: 0 1px 6px 0 #DCDEE3;
+  border-radius: 6px;
 }
 
 .btn--submit {
   display: block;
-  margin: 0 auto calc(var(--spacing) * 2);
+  margin: 0 auto 16px;
+  border-radius: 6px;
+  padding: 8px 12px;
   background: #1E9CC0;
   font-family: inherit;
   text-transform: uppercase;
@@ -47,8 +51,11 @@ textarea {
 }
 .message__container {
   display: flex;
-  padding: calc(var(--spacing) * 1.5);
+  margin-bottom: 8px;
+  border-radius: 6px;
+  padding: 12px;
   border: none;
   font-size: 14px;
   background: white;
+  box-shadow: 0 1px 6px 0 #DCDEE3;
 }
