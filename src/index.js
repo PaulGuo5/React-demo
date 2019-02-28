@@ -7,8 +7,9 @@ const { useState, Fragment } = React;
 const Welcome = () =>(
   <div>
     <h1>Assignment 2</h1>
-    <div>In this App, we can output what we input in the textarea below to the screen. And also, we can output the time we input.</div>
-    <div>The configuration of this app is learned from <a href="https://glitch.com/~create-react-app-sample">this demo</a></div>
+    <div>In this App, we can output what we input in the textarea below to the screen. Also, we can output the input time.</div>
+    <br></br>
+    <div>The React configuration of this app is learned from this <a href="https://glitch.com/~create-react-app-sample">demo</a>.</div>
     <br></br>
   </div>
 )
