@@ -27,6 +27,7 @@ const NewMessage = ({ message, timeStamp }) => (
   </div>
 );
 
+var unreadMessages=0;
 function ChatHook() {
   const [value, setInputValue] = useState('');
   const [messages, setMessages] = useState([]);
@@ -42,16 +43,17 @@ function ChatHook() {
     
     setMessages(prevState => ([newMessage, ...prevState]));
     setInputValue('');
+    unreadMessages = unreadMessages+1;
   }
   
   return (
     <Fragment>
       <Welcome />
       <TextField handleOnChange={updateValue} value={value} />
-      {unreadMessages.length > 0 &&
-        <h2>
-          You have {unreadMessages.length} unread messages.
-        </h2>
+      {unreadMessages > 0 &&
+        <h3>
+          You have {unreadMessages} messages.
+        </h3>
       }
       <button className="btn--submit" onClick={updateMessages}>SUBMIT</button>
       {messages}
