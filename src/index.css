@@ -12,3 +12,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.container {
+  width: 100%;
+  max-width: 768px;
+  background: #f3f3f3;
+}
+
+#app {
+  margin: 0 auto;
+  width: 70%;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: inherit;
+  height:100%; 
+}
+
+.btn--submit {
+  display: block;
+  margin: 0 auto calc(var(--spacing) * 2);
+  background: #1E9CC0;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+.message__container {
+  display: flex;
+  padding: calc(var(--spacing) * 1.5);
+  border: none;
+  font-size: 14px;
+  background: white;
+}
