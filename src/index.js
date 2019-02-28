@@ -4,35 +4,12 @@ import './index.css';
 
 const { useState, Fragment } = React;
 
-function ChatHook() {
-  const [value, setInputValue] = useState('');
-  const [messages, setMessages] = useState([]);
-  
-  const updateValue = ({ target }) => setInputValue(target.value); 
-  const updateMessages = () => {
-    if (!value) {
-      return;
-    }
-    const time = new Date().toLocaleTimeString();
-    const newMessage = 
-      <NewMessage key={time} message={value} timeStamp={time} />;
-    
-    setMessages(prevState => ([newMessage, ...prevState]));
-    setInputValue('');
-  }
-  
-  return (
-    <Fragment>
-      <TextField handleOnChange={updateValue} value={value} />
-      <button className="btn--submit" onClick={updateMessages}>SUBMIT</button>
-      {messages}
-    </Fragment>
-  );
-}
-
 const Welcome = () =>(
-  <h1>Assignment 2</h1>
-  <div>this </div>
+  <div>
+    <h1>Assignment 2</h1>
+    <div>In this App, we can output what we input in the textarea below to the screen. And also, we can output the time we input.</div>
+    <br></br>
+  </div>
 )
 
 const TextField = ({ value, handleOnChange }) => (
@@ -45,6 +22,33 @@ const NewMessage = ({ message, timeStamp }) => (
     <div class="timeStamp">{timeStamp}</div>
   </div>
 );
+
+function ChatHook() {
+  const [value, setInputValue] = useState('');
+  const [messages, setMessages] = useState([]);
+  
+  const updateValue = ({ target }) => setInputValue(target.value); 
+  
+  const updateMessages = () => {
+    if (!value) {
+      return;
+    }
+    const time = new Date().toLocaleTimeString();
+    const newMessage = <NewMessage key={time} message={value} timeStamp={time} />;
+    
+    setMessages(prevState => ([newMessage, ...prevState]));
+    setInputValue('');
+  }
+  
+  return (
+    <Fragment>
+      <Welcome />
+      <TextField handleOnChange={updateValue} value={value} />
+      <button className="btn--submit" onClick={updateMessages}>SUBMIT</button>
+      {messages}
+    </Fragment>
+  );
+}
 
 ReactDOM.render(
   <ChatHook />,
