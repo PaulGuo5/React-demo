@@ -141,4 +141,4 @@ Similarly, whenever the clock-generated DOM is removed, we also want to clear th
 
 ### ← 5. What kind of application did you make?
 
-I make an application of a simple message box. Firstly, I use the [React demo](https://glitch.com/~create-react-app-sample) to 
+I make an application of a simple message box. Firstly, I use the [React demo](https://glitch.com/~create-react-app-sample) to build the React configuration. And learn how to configure React environment. In general, 
