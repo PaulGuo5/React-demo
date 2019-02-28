@@ -24,11 +24,16 @@ function ChatHook() {
   return (
     <Fragment>
       <TextField handleOnChange={updateValue} value={value} />
-      <button className="btn--submit" onClick={updateMessages}>Send</button>
+      <button className="btn--submit" onClick={updateMessages}>SUBMIT</button>
       {messages}
     </Fragment>
   );
 }
+
+const Welcome = () =>(
+  <h1>Assignment 2</h1>
+  <div>this </div>
+)
 
 const TextField = ({ value, handleOnChange }) => (
   <textarea placeholder="Write your message" onChange={handleOnChange} value={value} />
@@ -37,7 +42,7 @@ const TextField = ({ value, handleOnChange }) => (
 const NewMessage = ({ message, timeStamp }) => (
   <div className="message__container">
     <div>{message}</div>
-    <div>{timeStamp}</div>
+    <div class="timeStamp">{timeStamp}</div>
   </div>
 );
 
