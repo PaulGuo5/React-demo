@@ -1,38 +1,12 @@
-Assignment 2
+Simple React demo
 =================
+Framework practice
 
-Learn You a Framework
 
-
-Steps
+Introduction
 ------------
 
-### ← Step 1
-
-Read about a couple different frameworks or libraries. Make a note of which ones you looked. There are many websites comparing various frameworks.
-
-### ← Step 2
-
-Pick one framework and learn it. Read the documentation and search for examples, tutorials, videos, or other resources
-
-### ← Step 3
-
-Build a site/app of your own design using the framework on a Glitch. This needs to be a new site, you can’t build on top of something you already built in the previous assignment or activities. Tip: use the search function on Glitch.com to look for the name of the framework. You can usually find templates or example apps that someone else has made. You may use these as references, but make sure to document it (see more about documentation below).
-
-### ← Step 4
-
-Document your project. In your project’s readme.md, answer the following questions (at least 200 words per question):
-
-1. Why you picked a particular framework.
-2. What about that framework appealed to you?
-3. What alternative frameworks did you consider?
-4. What resources did you read/watch/listen to?
-5. What kind of application did you make?
-
-Answers of step 4
-------------
-
-### ← 1. Why you picked a particular framework.
+### ← 1. Compare with other frameworks:
 
 - I choose to use React, because React makes it much easier to create user interfaces. And React enables us to code reliably and test easily. What is more, React can tranfer data better by components made from JavaScript and seperate DOM and application statement. 
 
@@ -45,7 +19,7 @@ Angular has abundant functions which may take some advantages and some disadvant
 - Compared with Vue:
 Though Vue is easy to use ,small scaler and better performance, we cannot ignore the issues when appying it to large scale applications. However, React has expansibility and it can apply to large scale applications.
 
-### ← 2. What about that framework appealed to you?
+### ← 2. React features:
 
 - React provides much more flexibility and responsiveness.
 
@@ -69,7 +43,7 @@ Though Vue is easy to use ,small scaler and better performance, we cannot ignore
 
 Thus, no matter what Web or native mobile development is developed, React is the ideal choice for most user interface design platforms.
 
-### ← 3. What alternative frameworks did you consider?
+### ← 3. Other frameworks:
 - jQuery: 
 Firstly, I consider jQuery as framework. And I learn from the official website of jQuery, which is that ([https://jquery.com/](https://jquery.com/)). It is said that jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript. Thus, its strong JavaScript library and API make it outstanding, but it updates the whole bunches of DOM when something changes, which makes it run slower.
 
@@ -79,7 +53,7 @@ And then, I search some information about Angular. Also, I look over the officia
 - Vue: 
 I also check the official website of Vue, which is ([https://cn.vuejs.org/](https://cn.vuejs.org/)). Is a progressive framework for building user interfaces. Unlike other large frameworks, Vue is designed to be applied from the bottom-up approach. Vue's core libraries focus on the view layer only, making it easy to get started and integrate with third-party libraries or existing projects. On the other hand, when used in conjunction with modern toolchains and supporting libraries, Vue is well placed to drive complex, single-page applications.
 
-### ← 4. What resources did you read/watch/listen to?
+### ← 4. References:
 1. [React document](https://reactjs.org/): https://reactjs.org/
 - Get started
 
@@ -146,7 +120,7 @@ Similarly, whenever the clock-generated DOM is removed, we also want to clear th
 - In this demo, I learn how the State work in the project
 
 
-### ← 5. What kind of application did you make?
+### ← 5. Application
 
 - I make an application of a simple message box. 
 - Firstly, I use the [React demo](https://glitch.com/~create-react-app-sample) to build the React configuration. And learn how to configure React environment. There are some configuration files, which are ended at .json. We can add frameworks and packages in "package.json". And those are end at ".json" are back end files. 
